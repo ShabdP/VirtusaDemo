@@ -19,13 +19,13 @@ jobs:
           username: shabd56
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
 
-      - name: Build Docker image (unnamed)
+      - name: Build Docker image
         run: |
-          docker build -t my-temp-image .
+          docker build -t my-temp-image1 .
 
       - name: Tag image with Docker Hub repo name
         run: |
-          docker tag my-temp-image shabd56/my-image-name:latest
+          docker tag my-temp-image1 shabd56/my-image-name:latest
 
       - name: Push image to Docker Hub
         run: |
