@@ -1,2 +1,2 @@
 FROM ubuntu:latest
-cmd ["echo", "Welcome Virtusans"]
+CMD ["echo", "Welcome Virtusans"]
