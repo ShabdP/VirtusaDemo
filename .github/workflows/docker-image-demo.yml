@@ -21,12 +21,12 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t my-temp-image2 .
+          docker build -t my-temp-image3 .
 
       - name: Tag image with Docker Hub repo name
         run: |
-          docker tag my-temp-image2 shabd56/my-image-name:v2
+          docker tag my-temp-image3 shabd56/my-image-name:v3
 
       - name: Push image to Docker Hub
         run: |
-          docker push shabd56/my-image-name:v2
+          docker push shabd56/my-image-name:v3
