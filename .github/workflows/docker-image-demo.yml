@@ -29,4 +29,4 @@ jobs:
 
       - name: Push image to Docker Hub
         run: |
-          docker push shabd56/my-image-name1:v1
+          docker push shabd56/my-image-name:v1
