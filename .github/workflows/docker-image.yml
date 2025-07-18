@@ -15,7 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag shabd56/gitdemo:$(date +%s)
+      run: docker build -t shabd56/gitact .
+
     - name: push image to docker hub
       run: |
         docker login -u shabd56 -p ${{ secrets.DOCKER_HUB_TOKEN }}
